@@ -1,5 +1,5 @@
 /* ===== VIDEO: paste your YouTube link here (watch, youtu.be or embed links all work) ===== */
-const VIDEO_URL = 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID';
+const VIDEO_URL = 'https://youtu.be/SjKiH33o5Dc';
 
 document.addEventListener('DOMContentLoaded', () => {
   /* 1. YouTube player (loads only when clicked) */
