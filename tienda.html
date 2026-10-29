@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>Store | prot</title></head>
+<body data-page="tienda">
+<div id="hdr"></div>
+<main>
+<div class="page-title"><div class="wrap"><h1 style="font-size:clamp(2rem,4vw,2.8rem)">Store</h1><p class="lead" style="margin-top:8px">Encryption services and devices to protect your information.</p></div></div>
+<div class="wrap shop">
+  <div class="toolbar">
+    <div class="chips"><button class="chip" data-f="all">All</button><button class="chip" data-f="service">Services</button><button class="chip" data-f="device">Devices</button></div>
+    <input class="field" id="q" type="search" placeholder="Search products" aria-label="Search products">
+    <select class="field" id="sort" aria-label="Sort by"><option value="rel">Featured</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option></select>
+  </div>
+  <div class="products" id="grid"></div>
+</div>
+</main>
+<div id="ftr"></div>
+<script src="art.js"></script><script src="app.js"></script></body></html>

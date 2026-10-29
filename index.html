@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>Prot | Encryption services and devices</title>
+<meta name="description" content="prot protects your company's data with encryption services and devices."></head>
+<body data-page="home">
+<div id="hdr"></div>
+<main>
+<section class="hero"><div class="wrap">
+  <div><h1 id="scr">What you write, only you can read.</h1>
+  <p class="lead">Encryption for teams that can't afford a breach: cloud services and physical devices that set up in minutes.</p>
+  <div class="cta"><a class="btn btn-primary" href="tienda.html">Browse the store</a><a class="btn btn-ghost" href="#calculator">Calculate my plan</a></div>
+  <p class="note">Type in the terminal and watch encryption run in your own browser.</p></div>
+  <div class="term live"><div class="term-bar"><i></i><i></i><i></i><span>live demo · runs in your browser</span></div>
+    <div class="cmd"><span>$ prot encrypt</span><input id="msg" value="Transfer $12,400 to account 0042" maxlength="80" aria-label="Message to encrypt" autocomplete="off"></div>
+    <pre id="out" aria-live="polite"></pre>
+    <div class="btns"><button id="dec">Decrypt</button><button id="tam">Tamper 1 bit</button><button id="new">New key</button></div>
+    <p id="st" role="status"></p></div>
+</div></section>
+
+<section><div class="wrap"><div class="sec-head"><h2>Where is your data at risk?</h2><p class="lead">Each situation needs a different kind of protection. Pick yours.</p></div>
+  <div class="tabs" role="tablist"><button class="tab on" role="tab" aria-selected="true" data-t="t1">On a lost device</button><button class="tab" role="tab" aria-selected="false" data-t="t2">In email and on the network</button><button class="tab" role="tab" aria-selected="false" data-t="t3">In the cloud</button></div>
+  <div class="tp" id="t1"><div><h3>A stolen laptop or drive shouldn't be a crisis</h3><p>With hardware encryption, whoever finds it only sees unreadable data. After 10 failed attempts, the device wipes itself.</p><a class="btn btn-primary btn-sm" href="tienda.html?f=device">See devices</a></div><div class="pair" data-pair="d2,d1"></div></div>
+  <div class="tp" id="t2" hidden><div><h3>Your messages travel over networks you don't control</h3><p>Encrypt every email and attachment, and protect the whole office's traffic with a VPN built into the router.</p><a class="btn btn-primary btn-sm" href="tienda.html">See solutions</a></div><div class="pair" data-pair="s3,d3"></div></div>
+  <div class="tp" id="t3" hidden><div><h3>Your cloud files, with keys that belong only to you</h3><p>Files are encrypted before they leave your computer, and keys are managed, rotated and revoked from one dashboard.</p><a class="btn btn-primary btn-sm" href="tienda.html?f=service">See services</a></div><div class="pair" data-pair="s1,s2"></div></div>
+</div></section>
+
+<section class="alt" id="calculator"><div class="wrap"><div class="sec-head"><h2>Build your plan in 10 seconds</h2><p class="lead">Move the slider and see what it would cost. One click sends everything to the cart so you can try the checkout.</p></div>
+  <div class="calc" id="calc">
+    <div class="calc-in">
+      <label class="r">People on your team <b id="uN">10</b><input type="range" id="u" min="1" max="200" value="10"></label>
+      <label class="opt"><input type="checkbox" checked disabled><span><b>Cloud file encryption</b><small>Included for the whole team</small></span></label>
+      <label class="opt"><input type="checkbox" id="o2" checked><span><b>Key management (KMS)</b><small>Centralized rotation and revocation</small></span></label>
+      <label class="opt"><input type="checkbox" id="o3"><span><b>Email encryption</b><small>One mailbox per person</small></span></label>
+      <label class="opt"><input type="checkbox" id="o5"><span><b>USB key for every person</b><small>prot Key USB device</small></span></label>
+      <label class="opt"><input type="checkbox" id="o4"><span><b>Initial audit</b><small>Report and improvement plan</small></span></label>
+    </div>
+    <div class="calc-out"><div id="cOut"></div><button class="btn btn-primary" id="cAdd">Add plan to cart</button></div>
+  </div></div></section>
+
+<section id="how"><div class="wrap"><div class="sec-head"><h2>How it works</h2><p class="lead">Three steps, and your team doesn't have to learn anything new.</p></div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>A key is generated</h3><p>It's created on your device or HSM module and never leaves your control.</p><code>prot keys create --size 256</code></div>
+    <div class="step"><div class="n">2</div><h3>Your data is encrypted</h3><p>Files and messages are protected before they leave your computer.</p><code>prot encrypt report.pdf</code></div>
+    <div class="step"><div class="n">3</div><h3>Keys are safeguarded</h3><p>Rotate keys, audit activity and revoke access from one dashboard.</p><code>prot keys rotate --all</code></div>
+  </div></div></section>
+
+<section class="alt"><div class="wrap"><div class="row-head"><h2>Best sellers</h2><a class="btn btn-ghost btn-sm" href="tienda.html">View full catalog</a></div>
+<div class="products" id="featured"></div></div></section>
+
+<section id="faq"><div class="wrap"><div class="sec-head"><h2>Frequently asked questions</h2></div>
+<div class="faq">
+  <details><summary>Can prot read my files?</summary><p>No. Encryption happens on your computer and the keys are yours. Without them, nobody can open the data, not even us.</p></details>
+  <details><summary>What happens if I lose a device?</summary><p>The data stays encrypted. You can also revoke its keys from the dashboard so it stops working with your account.</p></details>
+  <details><summary>How long does setup take?</summary><p>Cloud services are active within minutes. Devices arrive pre-configured with a quick-start guide.</p></details>
+  <details><summary>Can I combine services and devices?</summary><p>Yes, and we recommend it. The calculator on this page shows an example of a combined plan.</p></details>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="band"><h2>Protect what matters today.</h2><a class="btn btn-light" href="tienda.html">Go to the store</a></div></div></section>
+</main>
+<div id="ftr"></div>
+<script src="art.js"></script><script src="app.js"></script><script src="home.js"></script></body></html>
