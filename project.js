@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   box.innerHTML = `<button class="poster ${vid ? 'thumb-bg' : ''}" ${vid ? `style="background-image:url(https://i.ytimg.com/vi/${vid}/hqdefault.jpg)"` : ''} aria-label="Play video">
     <div><span class="play"></span><strong>Watch the project presentation</strong>${vid ? '' : '<small>Placeholder · set your YouTube link in js/project.js</small>'}</div></button>`;
   box.firstElementChild.onclick = () => {
-    if (!vid) return toast('Replace VIDEO_URL in js/project.js with your YouTube link');
+    if (!vid) return toast('');
     box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${vid}?autoplay=1&rel=0" title="Project presentation video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
   };
 
